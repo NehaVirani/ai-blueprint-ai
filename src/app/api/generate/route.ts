@@ -4,12 +4,9 @@ import Anthropic from "@anthropic-ai/sdk";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-// ⚠️ Example API key (DO NOT hardcode real keys in production)
 const anthropic = new Anthropic({
-  apiKey:
-    "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",
+  apiKey: process.env.ANTHROPIC_API_KEY,
 });
-
 /**
  * GET → List available models
  */
