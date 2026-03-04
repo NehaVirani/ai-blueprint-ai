@@ -59,13 +59,10 @@ export async function POST(req: Request) {
       ],
     });
 
-    // Extract text blocks from Claude response
     const text = response.content
-      .filter(
-        (c): c is { type: "text"; text: string } => c.type === "text"
-      )
-      .map((c) => c.text)
-      .join("");
+  .filter((c: any) => c.type === "text")
+  .map((c: any) => c.text)
+  .join("");
 
     // Safely extract JSON from response
     const start = text.indexOf("{");
