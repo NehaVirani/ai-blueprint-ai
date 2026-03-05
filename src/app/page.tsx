@@ -113,7 +113,7 @@ export default function Home() {
             <div style={styles.resultCard}>
               <h2 style={styles.sectionTitle}>Core Features</h2>
               <ul style={styles.featureList}>
-                {result.features.map((feature: string, index: number) => (
+                {result?.features?.map((feature: string, index: number) => ( 
                   <li key={index} style={styles.featureItem}>
                     {feature}
                   </li>
@@ -125,12 +125,12 @@ export default function Home() {
             <div style={styles.resultCard}>
               <h2 style={styles.sectionTitle}>Database Schema</h2>
 
-              {result.database_tables.map((table: any, index: number) => (
+              {result?.database_tables?.map((table: any, index: number) =>  (
                 <div key={index} style={styles.tableCard}>
                   <h3 style={styles.tableTitle}>{table.name}</h3>
 
                   <div style={styles.columnGrid}>
-                    {table.columns.map(
+                    {{table?.columns?.map(
                       (column: string, colIndex: number) => (
                         <div key={colIndex} style={styles.columnChip}>
                           {column}
