@@ -59,11 +59,13 @@ export async function POST(req: Request) {
       ],
     });
 
-    const text = response.content
+    const content = response.content || [];
+
+const text = content
   .filter((c: any) => c.type === "text")
   .map((c: any) => c.text)
   .join("");
-
+  
     // Safely extract JSON from response
     const start = text.indexOf("{");
     const end = text.lastIndexOf("}");
