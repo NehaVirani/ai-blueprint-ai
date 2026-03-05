@@ -1,28 +1,36 @@
+# AI Architecture Generator
 
-Paste:
-
-```markdown
-# Hi, I'm Neha
-
-Computer Science student passionate about AI systems and developer tools.
-
-## Projects
-
-### AI Blueprint Generator
-An AI-powered web app that converts startup ideas into structured system blueprints using LLMs.
-
-Tech:
-Next.js • TypeScript • Claude API • Serverless
-
-GitHub:
-https://github.com/NehaVirani/ai-blueprint-ai
+A full-stack AI tool that generates software architecture blueprints from product ideas.
 
 Live Demo:
-(coming soon)
+https://ai-blueprint-ai.vercel.app
 
-## Interests
+## Features
 
-- Artificial Intelligence
-- Developer Tools
-- Intelligent Automation
-- System Design
+- Generate system architecture from plain language prompts
+- AI-powered blueprint generation using Claude
+- Next.js full-stack architecture
+- Secure API key handling with environment variables
+- Deployed on Vercel
+
+## Tech Stack
+
+Frontend: Next.js / React  
+Backend: Next.js API Routes  
+AI Model: Anthropic Claude  
+Deployment: Vercel  
+Version Control: GitHub
+
+## Example Prompt
+
+"Build a todo list app"
+
+## Output
+
+- Summary
+- Core Features
+- Tech Stack
+- System Architecture
+- API Endpoints
+
+## Run Locally
